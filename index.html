@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<style>
+    a, body {
+        color: rgba(0, 0, 0, 0.87);        
+        text-decoration: none;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+    }
+
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;    
+    }
+    ul.topnav li {float: left;}
+
+    ul.topnav li a {
+        display: block;    
+        text-align: center;
+        padding: 10px 16px;
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    ul.topnav li a:hover{ 
+        text-decoration: underline;
+        opacity:.85;
+    }    
+    ul.topnav li.right {float: right;}
+    ul.topright {float: right;}
+
+    .signin{
+        background-color: cornflowerblue;
+        border: 1px 1px 1px 1px;
+        border-width: 1px 1px 1px 1px;        
+        border-style: solid;
+        border-color: cornflowerblue;
+        border-width: 1px 1px 1px 1px;
+        color: white;
+        font-weight: bold;
+        padding-top: 0px;
+    }
+
+    #logo {
+        display: block;    
+        margin: 10% auto auto auto;          
+    }
+
+    #searchbar {
+        display: block;    
+        margin: 5% auto auto auto;
+        padding: 10px;        
+        width: 50%;
+        border: 1px solid rgb(223, 225, 229);
+        border-radius: 24px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+    }
+
+    #searchbar:focus{        
+        outline: none;
+    }
+
+    .center {        
+        position: relative;
+    }
+
+    .button{
+        background-color: lightgray;        
+        border: none;
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+        display: inline-block;       
+        left: 35%; 
+        top: 50%;
+        position: relative; 
+    }
+
+    .button:hover {
+        color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightgray;
+        color: black;        
+    }
+</style>
+
+<html>
+<header>
+    <head>
+        <div>
+            <ul class="topnav">
+                <li><a href="About">About</a></li>
+                <li><a href="Store">Store</a></li>
+                <li class="right"><a class="signin">Sign In</a></li>
+                <li class="right"><a href="Gmail">Gmail</a></li>
+                <li class="right"><a href="Images">Images</a></li>
+                
+            </ul>
+        </div>        
+    </head>
+</header>
+
+<body>
+    <div>
+        <div class="center">
+            <img src="google_logo.png" alt="Google Logo" id="logo">
+        
+            <input type="search" name="searchbar" id="searchbar">        
+        
+            <input type="button" class="button" value="Google Search">
+            <input type="button" class="button" value="I'm Feeling Lucky">
+        </div>
+    </div>  
+</body>
+
+
+<footer>    
+    <ul class="topnav">
+        <li><a href="About">Advertising</a></li>
+        <li><a href="Store">Business</a></li>
+        <li><a href="Store">How Search works</a></li>
+        <li class="right"><a>Privacy</a></li>
+        <li class="right"><a>Terms</a></li>
+        <li class="right"><a>Settings</a></li>        
+    </ul>    
+</footer>
+</html>
